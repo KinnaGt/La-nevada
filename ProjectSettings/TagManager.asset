@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 852616235
+    locked: 0
+  - name: Filter
+    uniqueID: 2875444363
+    locked: 0
+  - name: Front
+    uniqueID: 1719228821
+    locked: 0
+  - name: Particles
+    uniqueID: 3956744673
+    locked: 0
