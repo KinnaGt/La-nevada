@@ -6,6 +6,9 @@ public class TitleAnimationTrigger : MonoBehaviour
 {
     Animator animator;
 
+    [SerializeField]
+    GameObject titleOptions;
+
     public void Start()
     {
         // Get the Animator component attached to this GameObject
@@ -23,5 +26,10 @@ public class TitleAnimationTrigger : MonoBehaviour
     {
         animator.speed = 1; // Set the speed to 1 to play the animation
         GetComponent<Collider2D>().enabled = false; // Disable the collider to prevent further clicks
+    }
+
+    void TriggerOptions()
+    {
+        titleOptions.SetActive(true);
     }
 }
