@@ -1023,7 +1023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140.61, y: -79.89}
+  m_AnchoredPosition: {x: 142.03, y: -82.33499}
   m_SizeDelta: {x: 281.22, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &825892031
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4292733425
   m_fontColor: {r: 0.94509804, g: 0.9137255, b: 0.8666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1136,6 +1136,7 @@ GameObject:
   - component: {fileID: 1031052360}
   - component: {fileID: 1031052359}
   - component: {fileID: 1031052363}
+  - component: {fileID: 1031052364}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1235,8 +1236,8 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
+  m_ChildAlignment: 4
+  m_Spacing: -20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -1244,6 +1245,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1031052364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031052358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f338c8897f7f72b49a17f2b064a8ca32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeVelocity: 0.1
 --- !u!1 &1264390050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,7 +1524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140.61, y: -25}
+  m_AnchoredPosition: {x: 142.03, y: -34.111664}
   m_SizeDelta: {x: 281.22, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1523099480
@@ -1542,7 +1556,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4292733425
   m_fontColor: {r: 0.94509804, g: 0.9137255, b: 0.8666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1620,6 +1634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896328894}
   - component: {fileID: 1896328895}
+  - component: {fileID: 1896328896}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -1684,7 +1699,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1a56b31ed197bfc4e9c2e56fb177a8a7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.94509804, g: 0.9137255, b: 0.8666667, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1694,6 +1709,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1896328896
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896328893}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43df194227a883b4b9e33490064f863a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2003526770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,7 +1860,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140.61, y: -134.78}
+  m_AnchoredPosition: {x: 142.03, y: -130.55832}
   m_SizeDelta: {x: 281.22, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052002563
@@ -1857,7 +1892,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4292733425
   m_fontColor: {r: 0.94509804, g: 0.9137255, b: 0.8666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
