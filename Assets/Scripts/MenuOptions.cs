@@ -11,7 +11,7 @@ public class MenuOptions : MonoBehaviour
     float fadeDuration = 1f;
 
     [SerializeField]
-    float alphaTarget = .8f;
+    float alphaTarget = .15f;
 
     void Awake()
     {
@@ -36,7 +36,6 @@ public class MenuOptions : MonoBehaviour
             image.color = color;
             yield return null;
         }
-        Debug.Log("FadeIn complete " + color.a);
         color.a = alphaTarget;
         image.color = color;
     }
