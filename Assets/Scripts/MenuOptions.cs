@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuOptions : MonoBehaviour
@@ -40,7 +41,18 @@ public class MenuOptions : MonoBehaviour
         image.color = color;
     }
 
-    void Start() { }
+    #region Button Methods
+    public void StartButton()
+    {
+        //Change to game scene
+        SceneManager.LoadScene("Game");
+    }
 
-    void Update() { }
+    public void OptionsButton() { }
+
+    public void ExitButton()
+    {
+        Application.Quit();
+    }
+    #endregion
 }
