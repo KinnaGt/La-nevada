@@ -28,7 +28,6 @@ public class TypewritingSequences : MonoBehaviour
 
     IEnumerator TypeTextCoroutine()
     {
-        Debug.Log("TypeTextCoroutine");
         text.maxVisibleCharacters = 0;
         for (int i = 0; i < text.text.Length; i++)
         {
