@@ -13,6 +13,7 @@ public class SequenceManager : MonoBehaviour
 
     Animator animator;
 
+    [SerializeField]
     int currentSequenceID = 1;
 
     void Awake()
@@ -32,5 +33,10 @@ public class SequenceManager : MonoBehaviour
     public void ShowNextNext()
     {
         textContainer.ShowText(currentSequenceID);
+    }
+
+    public void ShowNextButton()
+    {
+        nextButton.gameObject.SetActive(true);
     }
 }
