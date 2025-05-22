@@ -23,14 +23,26 @@ public class SequenceManager : MonoBehaviour
 
     public void NextSequence()
     {
-        textContainer.HideTexts(currentSequenceID);
+        #region Special Cases
+        if (currentSequenceID < 8 || currentSequenceID > 10)
+        {
+            textContainer.HideTexts(currentSequenceID);
+        }
+        if (currentSequenceID == 10)
+        {
+            textContainer.HideTexts(currentSequenceID - 1);
+            textContainer.HideTexts(currentSequenceID - 2);
+            textContainer.HideTexts(currentSequenceID);
+        }
+        #endregion
+
         currentSequenceID++;
         nextButton.gameObject.SetActive(false);
 
         animator.SetTrigger("Next");
     }
 
-    public void ShowNextNext()
+    public void ShowNextText()
     {
         textContainer.ShowText(currentSequenceID);
     }
