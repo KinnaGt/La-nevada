@@ -51,4 +51,9 @@ public class SequenceManager : MonoBehaviour
     {
         nextButton.gameObject.SetActive(true);
     }
+
+    public void ShowTrucoOptions()
+    {
+        textContainer.ShowTrucoOptions();
+    }
 }

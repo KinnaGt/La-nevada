@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class TextContainer : MonoBehaviour
 {
+    [SerializeField]
+    GameObject trucoFirstOptions;
+
+    public void ShowTrucoOptions()
+    {
+        trucoFirstOptions.SetActive(true);
+    }
+
     public void HideTexts(int id)
     {
         string idStr = id.ToString();

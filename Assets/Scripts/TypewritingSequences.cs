@@ -54,7 +54,7 @@ public class TypewritingSequences : MonoBehaviour
         }
         else
         {
-            nextButton.gameObject.SetActive(true);
+            nextButton?.gameObject.SetActive(true);
         }
     }
 }
