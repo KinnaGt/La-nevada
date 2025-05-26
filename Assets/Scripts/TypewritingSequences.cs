@@ -26,6 +26,13 @@ public class TypewritingSequences : MonoBehaviour
         StartCoroutine(TypeTextCoroutine());
     }
 
+    public void ChangeText(string newText)
+    {
+        text.maxVisibleCharacters = 0;
+        text.text = newText;
+        StartCoroutine(TypeTextCoroutine());
+    }
+
     IEnumerator TypeTextCoroutine()
     {
         text.maxVisibleCharacters = 0;
