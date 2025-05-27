@@ -1272,6 +1272,7 @@ MonoBehaviour:
   firstOptions: {fileID: 438927994}
   trucoButton: {fileID: 1847049507}
   NoQuieroButton: {fileID: 1373227262}
+  NoQuieroRealButton: {fileID: 95337077}
   polskyImage: {fileID: 1096645081}
   lucasImage: {fileID: 1425687383}
   sequenceAnimator: {fileID: 1965061215}
@@ -1819,9 +1820,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 270650285}
-        m_TargetAssemblyTypeName: TrucoOptions, Assembly-CSharp
-        m_MethodName: FaltaEnvido
+      - m_Target: {fileID: 1965061216}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: NextSequence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5582,7 +5583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContainer: {fileID: 488159728}
   nextButton: {fileID: 611688449}
-  currentSequenceID: 10
+  currentSequenceID: 1
 --- !u!1 &1976731126
 GameObject:
   m_ObjectHideFlags: 0

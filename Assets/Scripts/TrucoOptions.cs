@@ -26,6 +26,9 @@ public class TrucoOptions : MonoBehaviour
     Button NoQuieroButton;
 
     [SerializeField]
+    Button NoQuieroRealButton;
+
+    [SerializeField]
     SpriteRenderer polskyImage;
 
     [SerializeField]
@@ -36,6 +39,8 @@ public class TrucoOptions : MonoBehaviour
 
     [SerializeField]
     GameObject secondOptions;
+
+    bool secondFlag = false;
     #endregion
 
     #region First Options
@@ -90,7 +95,10 @@ public class TrucoOptions : MonoBehaviour
         offText.gameObject.SetActive(false);
         lucasText.ChangeText("¿Qué te pasa Juan? ¿No querés jugar?");
         polskyText.ChangeText("Envido! Vamos, no seas cagón!");
-        firstOptions.SetActive(true);
+        if (!secondFlag)
+            firstOptions.SetActive(true);
+        else
+            secondOptions.SetActive(true);
     }
 
     void FadeImages(bool fadeOut = true)
@@ -122,6 +130,7 @@ public class TrucoOptions : MonoBehaviour
 
     public void Envido()
     {
+        secondFlag = true;
         polskyText.ChangeText("Real Envido!");
         lucasText.ChangeText("No nos achiquemos ahora Juan");
         firstOptions.SetActive(false);
@@ -131,8 +140,25 @@ public class TrucoOptions : MonoBehaviour
     #endregion
 
     #region Second Options
-    public void FaltaEnvido() { }
+    public void FaltaEnvido()
+    {
+        secondOptions.SetActive(false);
+    }
 
-    public void NoQuieroRealEnvido() { }
+    public void NoQuieroRealEnvido()
+    {
+        sequenceAnimator.enabled = false;
+        lucasText.ChangeText("");
+        polskyText.ChangeText("Sabíamos que no te daba el cuero, Juan.");
+
+        secondOptions.SetActive(false);
+        NoQuieroRealButton.interactable = false;
+        string newText =
+            "<s>" + NoQuieroRealButton.gameObject.GetComponent<TextMeshProUGUI>().text + "</s>";
+        NoQuieroRealButton.gameObject.GetComponent<TextMeshProUGUI>().text = newText;
+
+        Destroy(NoQuieroRealButton.GetComponent<ButtonHoverEffect>());
+        Invoke("ShowOffText", 3f);
+    }
     #endregion
 }
