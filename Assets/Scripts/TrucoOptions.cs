@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TrucoOptions : MonoBehaviour
 {
+    #region Variables
     [SerializeField]
     TypewritingSequences lucasText;
 
@@ -34,6 +35,10 @@ public class TrucoOptions : MonoBehaviour
     Animator sequenceAnimator;
 
     [SerializeField]
+    GameObject secondOptions;
+    #endregion
+
+    #region First Options
     public void Truco()
     {
         lucasText.ChangeText("Pero... ¿Vos sos boludo Juan? No se puede cantar truco en un envido");
@@ -115,5 +120,19 @@ public class TrucoOptions : MonoBehaviour
         image.color = color;
     }
 
-    public void Envido() { }
+    public void Envido()
+    {
+        polskyText.ChangeText("Real Envido!");
+        lucasText.ChangeText("No nos achiquemos ahora Juan");
+        firstOptions.SetActive(false);
+        secondOptions.SetActive(true);
+    }
+
+    #endregion
+
+    #region Second Options
+    public void FaltaEnvido() { }
+
+    public void NoQuieroRealEnvido() { }
+    #endregion
 }
