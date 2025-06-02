@@ -56,4 +56,9 @@ public class SequenceManager : MonoBehaviour
     {
         textContainer.ShowTrucoOptions();
     }
+
+    public void ReproduceSfx(int index)
+    {
+        SfxManager.Instance.PlaySfx(index);
+    }
 }
