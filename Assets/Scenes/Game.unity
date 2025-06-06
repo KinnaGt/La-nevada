@@ -2877,7 +2877,7 @@ GameObject:
   - component: {fileID: 746330966}
   - component: {fileID: 746330965}
   m_Layer: 0
-  m_Name: MusicManager (1)
+  m_Name: MusicManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5225,7 +5225,7 @@ GameObject:
   - component: {fileID: 1761496215}
   - component: {fileID: 1761496214}
   m_Layer: 0
-  m_Name: SfxManager (1)
+  m_Name: 'SfxManager '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

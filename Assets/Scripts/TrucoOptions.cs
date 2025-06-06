@@ -54,7 +54,7 @@ public class TrucoOptions : MonoBehaviour
             "<s>" + trucoButton.gameObject.GetComponent<TextMeshProUGUI>().text + "</s>";
         trucoButton.gameObject.GetComponent<TextMeshProUGUI>().text = newText;
 
-        Destroy(trucoButton.GetComponent<ButtonHoverEffect>());
+        Destroy(trucoButton.GetComponent<ButtonManager>());
         Invoke("ShowEnvidoOptions", 5f);
     }
 
@@ -77,7 +77,7 @@ public class TrucoOptions : MonoBehaviour
             "<s>" + NoQuieroButton.gameObject.GetComponent<TextMeshProUGUI>().text + "</s>";
         NoQuieroButton.gameObject.GetComponent<TextMeshProUGUI>().text = newText;
 
-        Destroy(NoQuieroButton.GetComponent<ButtonHoverEffect>());
+        Destroy(NoQuieroButton.GetComponent<ButtonManager>());
         Invoke("ShowOffText", 3f);
     }
 
@@ -157,7 +157,7 @@ public class TrucoOptions : MonoBehaviour
             "<s>" + NoQuieroRealButton.gameObject.GetComponent<TextMeshProUGUI>().text + "</s>";
         NoQuieroRealButton.gameObject.GetComponent<TextMeshProUGUI>().text = newText;
 
-        Destroy(NoQuieroRealButton.GetComponent<ButtonHoverEffect>());
+        Destroy(NoQuieroRealButton.GetComponent<ButtonManager>());
         Invoke("ShowOffText", 3f);
     }
     #endregion

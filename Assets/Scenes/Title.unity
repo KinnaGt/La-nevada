@@ -1201,8 +1201,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292733425
-  m_fontColor: {r: 0.94509804, g: 0.9137255, b: 0.8666667, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1282,10 +1282,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1523099482}
+    m_SelectOnDown: {fileID: 2052002565}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -1337,10 +1337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c0ddcc407dd7043a92aba534b3eb69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverColor: {r: 1, g: 0.9607843, b: 0.6, a: 1}
   scaleAmount: 1.2
   scaleSpeed: 10
   colorSpeed: 10
+  isDefaultSelected: 0
 --- !u!1 &1031052358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,8 +1921,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292733425
-  m_fontColor: {r: 0.94509804, g: 0.9137255, b: 0.8666667, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2001,10 +2002,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 2052002565}
+    m_SelectOnDown: {fileID: 825892033}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -2056,10 +2057,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c0ddcc407dd7043a92aba534b3eb69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverColor: {r: 1, g: 0.9607843, b: 0.6, a: 1}
   scaleAmount: 1.2
   scaleSpeed: 10
   colorSpeed: 10
+  isDefaultSelected: 1
 --- !u!1 &1896328893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,8 +2332,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292733425
-  m_fontColor: {r: 0.94509804, g: 0.9137255, b: 0.8666667, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2411,10 +2413,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 825892033}
+    m_SelectOnDown: {fileID: 1523099482}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -2466,7 +2468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c0ddcc407dd7043a92aba534b3eb69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverColor: {r: 1, g: 0.9607843, b: 0.6, a: 1}
   scaleAmount: 1.2
   scaleSpeed: 10
   colorSpeed: 10
+  isDefaultSelected: 0
