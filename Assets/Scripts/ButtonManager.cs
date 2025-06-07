@@ -1,8 +1,7 @@
-using System.Collections;
+using System.Runtime.InteropServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class ButtonManager
     : MonoBehaviour,
@@ -11,11 +10,20 @@ public class ButtonManager
         ISelectHandler,
         IDeselectHandler
 {
+    [DllImport("__Internal")]
+    private static extern void Speak(string message);
+
     public Color hoverColor = Color.yellow;
     public float scaleAmount = 1.1f;
     public float scaleSpeed = 10f;
     public float colorSpeed = 10f;
+
+    [SerializeField]
     public bool isDefaultSelected = false;
+
+    [Header("Accessibility")]
+    [Tooltip("Texto leído por lectores de pantalla")]
+    public string accessibilityLabel;
 
     private Vector3 originalScale;
     private Vector3 targetScale;
@@ -69,6 +77,7 @@ public class ButtonManager
 
     public void OnSelect(BaseEventData eventData)
     {
+        SpeakIfPossible();
         SetHoverState(true); // Cuando se selecciona por teclado
     }
 
@@ -81,5 +90,13 @@ public class ButtonManager
     {
         targetScale = isHovering ? originalScale * scaleAmount : originalScale;
         targetColor = isHovering ? hoverColor : originalColor;
+    }
+
+    private void SpeakIfPossible()
+    {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        if (!string.IsNullOrEmpty(accessibilityLabel))
+            Speak(accessibilityLabel);
+#endif
     }
 }

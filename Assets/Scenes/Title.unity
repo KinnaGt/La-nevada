@@ -1342,6 +1342,7 @@ MonoBehaviour:
   scaleSpeed: 10
   colorSpeed: 10
   isDefaultSelected: 0
+  accessibilityLabel: 
 --- !u!1 &1031052358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,6 +2063,7 @@ MonoBehaviour:
   scaleSpeed: 10
   colorSpeed: 10
   isDefaultSelected: 1
+  accessibilityLabel: Pulsar para iniciar el juego.
 --- !u!1 &1896328893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,3 +2475,4 @@ MonoBehaviour:
   scaleSpeed: 10
   colorSpeed: 10
   isDefaultSelected: 0
+  accessibilityLabel: 
