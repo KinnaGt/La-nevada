@@ -160,5 +160,10 @@ public class TrucoOptions : MonoBehaviour
         Destroy(NoQuieroRealButton.GetComponent<ButtonManager>());
         Invoke("ShowOffText", 3f);
     }
+
+    public void Click()
+    {
+        SfxManager.Instance?.PlayClick();
+    }
     #endregion
 }

@@ -23,6 +23,7 @@ public class SequenceManager : MonoBehaviour
 
     public void NextSequence()
     {
+        SfxManager.Instance?.PlayClick();
         #region Special Cases
         if (currentSequenceID < 8 || currentSequenceID > 10)
         {

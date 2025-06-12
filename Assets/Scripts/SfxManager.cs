@@ -27,6 +27,11 @@ public class SfxManager : MonoBehaviour
         }
     }
 
+    public void PlayClick()
+    {
+        PlaySfx(0);
+    }
+
     public void PlaySfx(int index)
     {
         if (isSfxEnabled && index >= 0 && index < sfxClips.Length)

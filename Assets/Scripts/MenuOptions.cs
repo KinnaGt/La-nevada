@@ -44,14 +44,19 @@ public class MenuOptions : MonoBehaviour
     #region Button Methods
     public void StartButton()
     {
+        SfxManager.Instance.PlayClick();
         //Change to game scene
         SceneManager.LoadScene("Game");
     }
 
-    public void OptionsButton() { }
+    public void OptionsButton()
+    {
+        SfxManager.Instance.PlayClick();
+    }
 
     public void ExitButton()
     {
+        SfxManager.Instance.PlayClick();
         Application.Quit();
     }
     #endregion
